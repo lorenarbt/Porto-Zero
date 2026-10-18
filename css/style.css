@@ -41,3 +41,32 @@ h1{font-size:30px;font-weight:600;color:var(--ink);line-height:1.2}h2{font-size:
 #toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--nav);color:#fff;padding:12px 18px;border-radius:8px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:9}#toast.on{opacity:1}
 @media(max-width:1100px){nav{gap:20px;padding:0 20px;overflow-x:auto}.ctx{display:none}main{padding:20px}.split,.split.r,.g3{grid-template-columns:1fr}.f2{grid-template-columns:1fr}.steps{flex-direction:column;gap:10px}.st s{display:none}h1{font-size:24px}.row.wrap{flex-wrap:wrap}}
 .mark img{width:22px;height:22px;display:block}.ctx img{width:16px;height:16px;vertical-align:-3px;margin-right:8px}
+
+/* ===== Responsive ===== */
+img{max-width:100%}
+.inp{height:auto;min-height:44px;padding:10px 14px}
+@media(max-width:1280px){.split{grid-template-columns:minmax(0,1fr) minmax(300px,420px)}.split.r{grid-template-columns:minmax(280px,380px) 1fr}main{padding:24px 28px}nav{padding:0 28px;gap:32px}}
+@media(max-width:1100px){
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.f2{grid-template-columns:1fr!important}
+.row.sp{flex-wrap:wrap}
+.tabs{overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{white-space:nowrap;flex:none}
+.ph{flex-wrap:wrap;gap:8px}.tf{flex-wrap:wrap;gap:6px}
+}
+@media(max-width:700px){
+nav{height:64px;padding:0 16px;gap:16px}.brand{font-size:18px}.mark{width:30px;height:30px}.tabs{gap:18px}.tab{font-size:13px}.av{width:30px;height:30px}
+main{padding:16px;gap:18px}
+h1{font-size:22px}h2{font-size:17px}
+.g3{grid-template-columns:1fr}
+.metric strong{font-size:26px}.calc big{font-size:24px}
+.card{padding:18px;gap:16px}.card.flush{padding:0}.ph{padding:18px}.tr{padding:0 18px}.tf{padding:12px 18px}
+.det{flex-direction:column;gap:2px}.det span{width:auto}
+.btn{height:auto;min-height:40px;padding:10px 14px;white-space:normal;text-align:left}
+.row.sp>.btn,.row.sp>.row{width:100%}.row.sp>.row>.btn{flex:1;justify-content:center}
+.stg{gap:12px}.file{flex-wrap:wrap}
+.cc{padding:16px 16px 2px}
+.foot,.tf{font-size:11px}
+.up{font-size:12px}
+.steps{padding:12px 14px}
+#toast{width:calc(100% - 32px);text-align:center}
+}
