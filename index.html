@@ -1,15 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Harbour · protótipo Porto-0</title>
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Porto Zero — logística portuária sustentável. Portos mais inteligentes, operações mais eficientes e um futuro marítimo sem desperdícios.">
+  <title>Porto Zero | Logística Portuária Sustentável</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/landing.css">
+  <script src="js/landing.js" defer></script>
 </head>
 <body>
-<div id="app"></div>
-<div id="toast"></div>
-<script src="js/app.js"></script>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Porto Zero — início">
+      <img src="assets/logo-porto-zero.png" alt="Logo Porto Zero — Logística Portuária Sustentável">
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#problema">O desafio</a>
+      <a href="#solucao">A solução</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#impacto">Impacto</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+    <a class="header-cta" href="dashboard.html">Acessar o dashboard <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-label="Apresentação Porto Zero">
+      <div class="hero-slides">
+        <article class="hero-slide active" style="--hero-image: url('https://images.unsplash.com/photo-1578575437130-527bdd713cd3?auto=format&fit=crop&w=2200&q=85')">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Logística portuária sustentável</p>
+            <h1>Portos mais inteligentes.<br><span>Operações mais eficientes.</span></h1>
+            <p class="hero-copy">Um futuro marítimo sem desperdícios começa com decisões melhores — antes mesmo de o navio atracar.</p>
+            <div class="hero-actions">
+              <a class="button button-orange" href="#solucao">Conheça o Porto Zero <span>→</span></a>
+              <a class="text-link" href="#problema">Entenda o desafio <span>↓</span></a>
+            </div>
+          </div>
+          <div class="slide-caption"><span>01 / 03</span><span>Planejamento inteligente de chegadas</span></div>
+        </article>
+        <article class="hero-slide" style="--hero-image: url('https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=85')">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Menos espera, menos emissões</p>
+            <h2>O tempo parado<br><span>também deixa marcas.</span></h2>
+            <p class="hero-copy">A espera de embarcações pode aumentar custos operacionais e emissões. Sincronizar é o primeiro passo para mudar esse cenário.</p>
+            <div class="hero-actions">
+              <a class="button button-orange" href="#problema">Veja o impacto <span>→</span></a>
+              <a class="text-link" href="#impacto">Nossa visão <span>↓</span></a>
+            </div>
+          </div>
+          <div class="slide-caption"><span>02 / 03</span><span>Eficiência portuária, futuro sustentável</span></div>
+        </article>
+        <article class="hero-slide" style="--hero-image: url('https://images.unsplash.com/photo-1566847438217-76e82d383f84?auto=format&fit=crop&w=2200&q=85')">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Dados que conectam operações</p>
+            <h2>Eficiência portuária.<br><span>Futuro sustentável.</span></h2>
+            <p class="hero-copy">O Porto Zero veio para transformar a operação logística portuária com planejamento, coordenação e inteligência ambiental.</p>
+            <div class="hero-actions">
+              <a class="button button-orange" href="#funcionalidades">Explore a plataforma <span>→</span></a>
+              <a class="text-link" href="#contato">Vamos conversar <span>↓</span></a>
+            </div>
+          </div>
+          <div class="slide-caption"><span>03 / 03</span><span>Uma nova perspectiva para os portos</span></div>
+        </article>
+      </div>
+      <div class="slider-controls" aria-label="Controles do banner">
+        <button class="slider-arrow prev" aria-label="Slide anterior">←</button>
+        <div class="slider-dots">
+          <button class="slider-dot active" aria-label="Ir para slide 1" aria-current="true"></button>
+          <button class="slider-dot" aria-label="Ir para slide 2"></button>
+          <button class="slider-dot" aria-label="Ir para slide 3"></button>
+        </div>
+        <button class="slider-arrow next" aria-label="Próximo slide">→</button>
+      </div>
+      <div class="hero-bottom-line"><span></span><p>Eficiência portuária, futuro sustentável.</p></div>
+    </section>
+
+    <section class="intro section-pad" id="problema">
+      <div class="section-kicker"><span>01</span> O desafio</div>
+      <div class="intro-grid">
+        <h2>Quando um navio espera,<br><em>o custo não fica parado.</em></h2>
+        <div class="intro-text">
+          <p>O tempo de espera no entorno portuário pode significar mais combustível consumido, emissões adicionais e recursos operacionais mal aproveitados.</p>
+          <p>Sem visibilidade integrada das chegadas, dos berços e das operações de carga, coordenar o fluxo de embarcações se torna um desafio para toda a cadeia logística.</p>
+        </div>
+      </div>
+      <div class="stat-grid">
+        <article class="stat-card stat-featured">
+          <span class="stat-label">Custo operacional estimado</span>
+          <strong>R$ 30 mil<span>/hora</span></strong>
+          <p>Valor ilustrativo apresentado no conceito do projeto para dimensionar o custo potencial da espera de um navio. Validar a fonte antes de publicar como dado factual.</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">↗</span>
+          <span class="stat-label">Impacto ambiental</span>
+          <strong>CO₂</strong>
+          <p>O consumo de combustível durante a espera pode aumentar a pegada de carbono da operação.</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">◷</span>
+          <span class="stat-label">Tempo e previsibilidade</span>
+          <strong>Horas contam.</strong>
+          <p>Uma programação mais coordenada ajuda a identificar conflitos e reduzir esperas evitáveis.</p>
+        </article>
+      </div>
+      <p class="data-note">Os valores numéricos de impacto devem ser acompanhados de fonte, período e metodologia antes de serem utilizados em comunicação pública.</p>
+    </section>
+
+    <section class="solution section-pad" id="solucao">
+      <div class="solution-image" role="img" aria-label="Navio de carga em operação marítima"></div>
+      <div class="solution-copy">
+        <div class="section-kicker light"><span>02</span> A solução</div>
+        <h2>O porto não precisa esperar.<br><em>Precisa se planejar.</em></h2>
+        <p>O Porto Zero é uma proposta de plataforma digital de inteligência logística portuária. A solução organiza informações de chegada, permanência e operação dos navios para apoiar decisões mais eficientes e sustentáveis.</p>
+        <p>Ao conectar programação operacional e indicadores ambientais, ajuda a transformar dados em ações — com potencial para reduzir atrasos, custos e emissões evitáveis.</p>
+        <a class="button button-light" href="#funcionalidades">Descubra como funciona <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="features section-pad" id="funcionalidades">
+      <div class="section-kicker"><span>03</span> A plataforma</div>
+      <div class="section-heading">
+        <h2>Uma visão integrada<br><em>da operação portuária.</em></h2>
+        <p>Mais clareza para planejar, coordenar e acompanhar cada etapa da estadia do navio.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-number">01</div><div class="feature-symbol">▦</div>
+          <h3>Planejamento de chegadas</h3>
+          <p>Organize horários previstos, janelas de chegada e berços designados em um cronograma visual.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-number">02</div><div class="feature-symbol">◷</div>
+          <h3>Gestão de estadias</h3>
+          <p>Acompanhe entradas, saídas e tempo planejado no porto para dar mais previsibilidade à operação.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-number">03</div><div class="feature-symbol">⌘</div>
+          <h3>Coordenação de cargas</h3>
+          <p>Visualize informações por embarcação, berço e empresa de carga para facilitar o alinhamento operacional.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-number">04</div><div class="feature-symbol">◒</div>
+          <h3>Indicadores operacionais</h3>
+          <p>Consulte chegadas programadas e estadia média planejada para identificar oportunidades de melhoria.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-number">05</div><div class="feature-symbol">♧</div>
+          <h3>Inteligência ambiental</h3>
+          <p>Estruture o acompanhamento de emissões estimadas e avalie cenários para operações de menor impacto.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-number">06</div><div class="feature-symbol">⇩</div>
+          <h3>Relatórios e cronogramas</h3>
+          <p>Exporte a programação e compartilhe informações para apoiar a tomada de decisão e a prestação de contas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="impact section-pad" id="impacto">
+      <div class="impact-top">
+        <div>
+          <div class="section-kicker light"><span>04</span> O impacto que buscamos</div>
+          <h2>Eficiência para a operação.<br><em>Responsabilidade com o oceano.</em></h2>
+        </div>
+        <p>Uma logística melhor coordenada pode beneficiar armadores, terminais, empresas de carga e o ambiente portuário.</p>
+      </div>
+      <div class="impact-list">
+        <div><span>01</span><strong>Menos espera evitável</strong><p>Chegadas planejadas em maior sintonia com a disponibilidade operacional.</p></div>
+        <div><span>02</span><strong>Mais previsibilidade</strong><p>Informações organizadas para apoiar o planejamento de toda a cadeia.</p></div>
+        <div><span>03</span><strong>Decisões orientadas por dados</strong><p>Indicadores para revelar gargalos e oportunidades de melhoria.</p></div>
+        <div><span>04</span><strong>Operações mais sustentáveis</strong><p>Visibilidade sobre o impacto ambiental e caminhos para reduzi-lo.</p></div>
+      </div>
+    </section>
+
+    <section class="closing section-pad" id="contato">
+      <div class="closing-mark">PZ<span>↗</span></div>
+      <p class="eyebrow dark-eyebrow">PORTO ZERO</p>
+      <h2>O próximo passo para um porto mais inteligente <em>começa agora.</em></h2>
+      <p>Vamos transformar a forma como os navios chegam, as operações se organizam e o futuro marítimo se constrói.</p>
+      <a class="button button-orange" href="mailto:contato@portozero.com.br?subject=Quero%20conhecer%20o%20Porto%20Zero">Quero conhecer o Porto Zero <span>→</span></a>
+      <small>Endereço de contato ilustrativo — substitua pelo e-mail oficial do projeto antes de publicar.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio"><img src="assets/logo-porto-zero.png" alt="Porto Zero"></a>
+    <p>Logística portuária sustentável.</p>
+    <span>© <span id="year"></span> Porto Zero. Todos os direitos reservados.</span>
+  </footer>
 </body>
 </html>
